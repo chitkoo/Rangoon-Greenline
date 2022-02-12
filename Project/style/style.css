@@ -1,0 +1,354 @@
+html{
+	scroll-behavior: smooth;
+}
+.site-logo {
+	width: 2em;
+	height: 2em;
+}
+
+.home-section {
+	background: linear-gradient(to top left, #91f1e3 0%, #0b7767 80%);
+	/* background: url('/Project/img/bg_1.jpg');
+	background-size: cover;
+	background-position: center; */
+}
+
+/* home-card */
+.home-card {
+	width: 70%;
+	height: 80%;
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('/Project/img/ygn_station.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 2em;
+	overflow: hidden;
+}
+.home-card-body {
+	position: absolute;
+	right: 80px;
+	top: 200px;
+}
+
+.ticket-card {
+	background-color: aliceblue;
+	width: 40%;
+	height: 60%;
+	border-radius: 2em;
+	overflow: hidden;
+}
+
+/* ticket-form */
+.divider {
+	width: 100%;
+	background: #8d9598;
+	height: 1px;
+}
+/* pricing */
+#pricing{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/Project/img/train_bg.jpg');
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+}
+.card{
+	background-color: #ffffff50 !important;
+	border-radius: 1.25em;
+}
+.card-img{
+	border-radius: 1.5em;
+}
+
+/* partners */
+#partners{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('/Project/img/home_bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.custome-icon{
+	font-size: 50px;
+    margin-bottom: 5px;
+	color: #107263;
+}
+.slick-arrow{
+	display: none !important;
+}
+
+/* Q&A */
+#questions{
+	background-color: #8D9598;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #000;
+	background: none;
+}
+.accordion-button, .accordion-item {
+	background-color: #ffffff80;
+}
+.accordion-button:focus, .accordion-item:focus {
+	background-color: #ffffff80;
+}
+
+.fa-apple,.fa-google-play{
+	font-size: 40px;
+}
+
+/* routes */
+table{
+	margin: auto;
+	cursor: pointer;
+}
+#routes{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('/Project/img/route_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* signup */
+#signup{
+	background: linear-gradient(to top right, #349587 0%, #0b7767 80%);
+}
+.sign-text{
+	cursor: pointer;
+}
+
+/* footer */
+.footer{
+	background-color: #028D78;
+}
+
+/* custome nav */
+.custome-nav{
+	/* position: absolute;
+	top: 0; */
+    z-index: 50;
+}
+.site-nav-scroll{
+    position: fixed;
+    background-color: rgb(236, 232, 232);
+    box-shadow: 0 0 5px #00000020;
+    animation: slow 1s linear !important;
+}
+
+@keyframes slow {
+	from{
+		transform: translateY(-200px);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+
+.nav-link{
+    padding: 0.5rem 1.3rem !important;
+}
+
+/* active link custome */
+.nav-link.current-section{
+    border: 2px solid #00A88F;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
+/* mobile nav */
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* animation delay */
+.animation-delay-1{
+	animation-delay: 0.5s;
+}
+.animation-delay-2{
+	animation-delay: 1s;
+}
+.animation-delay-3{
+	animation-delay: 1.5s;
+}
+.animation-delay-4{
+	animation-delay: 2s;
+}
+.animation-delay-5{
+	animation-delay: 2.5s;
+}
+.animation-delay-6{
+	animation-delay: 3s;
+}
+.animation-delay-7{
+	animation-delay: 3.5s;
+}
+
+/* custome */
+.price-card{
+	transition: 0.5s;
+	cursor: pointer;
+}
+.price-card:hover{
+	transform: scale(1.02);
+}
+.partner-card{
+	transition: 0.5s;
+	cursor: pointer;
+}
+.partner-card:hover{
+	transform: translateY(-20px);
+}
+.partner-card:hover i{
+	transition: 0.5s;
+}
+.partner-card:hover i{
+	transform: translateX(20px);
+}
+.custome-shadow{
+	box-shadow: 0 0 5px #00A88F;
+}
+.app{
+	transition: 0.5s;
+	cursor: pointer;
+}
+.app:hover{
+	transform: scale(1.02);
+}
+.social{
+	transition: 0.5s;
+	cursor: pointer;
+}
+.social:hover{
+	transform: scale(1.02);
+	color: #0054A6;
+}
+.brand-txt{
+	transition: 0.5s;
+	cursor: pointer;
+}
+.brand-txt:hover{
+	transform: scale(1.02);
+	color: #0054A6;
+}
+
+@media screen and (max-width: 780px) {
+	.custome-nav{
+        background-color: rgb(236, 232, 232, 0.8);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px #00000020;
+    }
+    .custome-nav .nav-link{
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background-color: rgb(236, 232, 232, 0.8);
+        box-shadow: 0 0 5px #00000020;
+        border-radius: 10em;
+    }
+    .custome-nav .navbar-collapse{
+        margin-top: 10px;
+    }
+    .home-card{
+        width: 100%;
+		height: 50%;
+		margin: 0 !important;
+		top: -22%;
+    }
+    .home-card-body{
+        top: 10%;
+        padding-left: 20px;
+    }
+    .ticket-card{
+        width: 100%;
+        bottom: 3%;
+		height: 54%;
+		overflow: scroll;
+    }
+    .custom-card{
+		padding: 0%;
+    }
+	.sponsers div{
+		display: flex;
+		justify-content: center;
+		margin: 10px 0;
+	}
+	.call-btn{
+		width: 100% !important;
+	}
+	.app-card{
+		display: block !important;
+	}
+	.app{
+		margin-bottom: 10px;
+		margin-right: 0 !important;
+	}
+	.mobile{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+	.site-nav {
+		padding: 0;
+	}
+	.custome-nav{
+        background-color: rgb(236, 232, 232, 0.8);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px #00000020;
+    }
+    .custome-nav .nav-link{
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background-color: rgb(236, 232, 232, 0.8);
+        box-shadow: 0 0 5px #00000020;
+        border-radius: 10em;
+    }
+    .custome-nav .navbar-collapse{
+        margin-top: 10px;
+    }
+	.navbar-brand {
+		margin-right: 0;
+	}
+	.home-card {
+		width: 100%;
+		height: 50%;
+		margin: 0 !important;
+		top: -24%;
+	}
+	.discount {
+		margin-bottom: 8px !important;
+	}
+	.home-card-body {
+		top: 20px;
+		padding-left: 15px;
+	}
+	.ticket-card {
+		width: 100%;
+		height: 68%;
+		bottom: 1%;
+		padding-top: 5px;
+		overflow: auto;
+	}
+	.ticket-card form {
+		padding: 15px !important;
+	}
+	.custom-card {
+		padding: 0%;
+	}
+	.sponsers div{
+		display: flex;
+		justify-content: center;
+		margin: 5px 0;
+	}
+	.call-btn{
+		width: 100% !important;
+	}
+	.app-card{
+		display: block !important;
+	}
+	.app{
+		margin-bottom: 10px;
+		margin-right: 0 !important;
+	}
+	.mobile{
+		width: 100%;
+	}
+}

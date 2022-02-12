@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$font-family-sans-serif:'Montserrat', sans-serif;
+
+$primary: #00A88F;
+$secondary: #0054A6;
+$info: #8A9497;
+$success: #D5D9E4;
+$warning: #FEBF07;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

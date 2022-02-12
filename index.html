@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<div class="loader-container">
+	<div class="loader">Loading...</div>
+</div>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RangoonGreenline</title>
+
+		<meta name="description" content="Chit Ko self practice project 2022"/>
+		<meta name="keywords" content="ckko, ckkko train project, ck train, rangoon greenline"/>
+		<meta name="author" content="Chit Ko"/>
+
+
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content="Chit Ko self practice project 2022"/>
+		<meta property="og:image" content="project/img/preview.png"/>
+		<meta property="og:url" content="http://mms-it.com/"/>
+		<meta property="og:site_name" content="Student Project"/>
+		<meta property="og:description" content="Practice project by chit ko"/>
+
+		<link rel="shortcut icon" type="image/x-icon" href="project/img/favicon.ico" />
+
+		<style>
+			.loader-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #fff;
+				height: 100vh;
+				width: 100%;
+				z-index: 2022;
+				position: absolute;
+			}
+			.loader {
+				color: #00A88F;
+				font-size: 20px;
+				margin: 100px auto;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				position: relative;
+				text-indent: -9999em;
+				-webkit-animation: load4 1.3s infinite linear;
+				animation: load4 1.3s infinite linear;
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+			}
+			@-webkit-keyframes load4 {
+				0%,
+				100% {
+					box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+				}
+				12.5% {
+					box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+				}
+				25% {
+					box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em,
+						-2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+				}
+				37.5% {
+					box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+						-2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+				}
+				50% {
+					box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+						-2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+				}
+				62.5% {
+					box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+						-2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+				}
+				75% {
+					box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+				}
+				87.5% {
+					box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+				}
+			}
+			@keyframes load4 {
+				0%,
+				100% {
+					box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+				}
+				12.5% {
+					box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+				}
+				25% {
+					box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em,
+						-2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+				}
+				37.5% {
+					box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+						-2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+				}
+				50% {
+					box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+						-2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+				}
+				62.5% {
+					box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+						-2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+				}
+				75% {
+					box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+				}
+				87.5% {
+					box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+						-2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+				}
+			}
+		</style>
+
+		<link rel="stylesheet" href="./scss/main.css" />
+		<link
+			rel="stylesheet"
+			href="./Project/vendor/fontawesome-free-6.0.0-web/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./Project/vendor/slick-1.8.1/slick/slick.css" />
+		<link rel="stylesheet" href="./Project/vendor/slick-1.8.1/slick/slick-theme.css" />
+		<link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+		<link rel="stylesheet" href="./Project/style/style.css" />
+	</head>
+	<body>
+		<!-- nav -->
+		<header class="container-fluid custome-nav bg-success">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 animate__animated animate__slideInDown">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<div class="container-fluid site-nav">
+								<a class="navbar-brand" href="#">
+									<div class="d-flex justify-content-center align-items-center">
+										<img src="./Project/img/brand_logo.svg" class="site-logo" />
+										<p class="text-primary mb-0 ms-2">Rangoon Greenline</p>
+									</div>
+								</a>
+								<button
+									class="navbar-toggler border-0"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<i class="fa-solid fa-bars text-primary menu-icon"></i>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+										<li class="nav-item">
+											<a class="nav-link" aria-current="page" href="#home">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#pricing">Pricings</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#partners">Partners</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#questions">FAQs</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#routes">Routes</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#signup">Sign Up</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- home -->
+		<section class="container-fluid home-section" id="home">
+			<div class="container">
+				<div class="row min-vh-100">
+					<div class="col-12 position-relative d-flex align-items-center custom-card">
+						<!-- home-card -->
+						<div class="home-card ms-auto my-5 wow animate__fadeInRight animation-delay-1 shadow">
+							<div class="home-card-body text-success">
+								<p class="h2 mb-3 lh-1">Explore Myanmar effortlessly <br />by train and bus</p>
+								<p class="h6 mb-5 discount">Save 61% on average when you book in advance*</p>
+								<button class="btn btn-primary rounded-pill px-4 text-white">Learn More</button>
+							</div>
+						</div>
+						<!-- ticket-form -->
+						<div class="ticket-card position-absolute wow animate__fadeInDown animation-delay-1 shadow">
+							<form action="" class="p-4 text-secondary">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<!-- <div class="d-flex"> -->
+									<div class="form-floating mb-3 from-input w-100">
+										<input type="text" class="form-control" id="from" placeholder="yangon" />
+										<label for="from">From</label>
+									</div>
+									<div class="arrow-icon mx-2 d-flex justify-content-center">
+										<i class="fa-solid fa-right-left h4 text-secondary"></i>
+									</div>
+									<div class="form-floating to-input mb-3 w-100">
+										<input type="text" class="form-control" id="to" placeholder="mandalay" />
+										<label for="to">To</label>
+									</div>
+									<!-- </div> -->
+								</div>
+								<div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="station" placeholder="bagan" />
+										<label for="station">Enter Station</label>
+									</div>
+								</div>
+								<div class="divider mb-3"></div>
+								<div class="justify-content-evenly">
+									<div>
+										<div class="form-floating mb-3">
+											<input type="date" class="form-control text-secondary" id="out" placeholder="bagan" />
+											<label for="out">Out</label>
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-group-text text-secondary" id="leaving">Depart at</span>
+											<input
+												type="number"
+												min="1"
+												max="12"
+												class="form-control text-secondary"
+												aria-describedby="basic-addon1"
+											/>
+											<span class="input-group-text" id="leaving">:</span>
+											<input
+												type="number"
+												min="1"
+												max="59"
+												class="form-control text-secondary"
+												aria-describedby="basic-addon1"
+											/>
+											<select name="daytime" id="daytime" class="form-select text-secondary">
+												<option value="am">AM</option>
+												<option value="pm">PM</option>
+											</select>
+										</div>
+									</div>
+									<div>
+										<div class="form-floating mb-3">
+											<input type="date" class="form-control text-secondary" id="out" placeholder="bagan" />
+											<label for="out">Return</label>
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-group-text text-secondary" id="basic-addon1">Depart at</span>
+											<input
+												type="number"
+												min="1"
+												max="12"
+												class="form-control text-secondary"
+												aria-describedby="basic-addon1"
+											/>
+											<span class="input-group-text" id="leaving">:</span>
+											<input
+												type="number"
+												min="1"
+												max="59"
+												class="form-control text-secondary"
+												aria-describedby="basic-addon1"
+											/>
+											<select name="daytime" id="daytime" class="form-select text-secondary">
+												<option value="am">AM</option>
+												<option value="pm" selected>PM</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<button class="btn btn-secondary w-100 rounded-pill mt-3 py-3 ticket-btn">
+									Get times & tickets
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- pricing -->
+		<section class="container-fluid" id="pricing">
+			<div class="container min-vh-100">
+				<div class="row">
+					<div class="col-12 wow animation-delay-1 animate__fadeInDown">
+						<div class="my-5 text-center">
+							<h4 class="text-capitalize text-primary mb-3">pricing</h4>
+							<h1 class="fw-bolder text-uppercase text-success">Our Pricings</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row pricing-slide my-5 wow animation-delay-2 animate__fadeInUp">
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/mdy.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Mandalay</p>
+									<p class="mb-0"><span class="text-warning">$</span> 25</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/zwekapin.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Myitkyina</p>
+									<p class="mb-0"><span class="text-warning">$</span> 30</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/bagan.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Bagan</p>
+									<p class="mb-0"><span class="text-warning">$</span> 35</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/gokteik.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Gokhtiek</p>
+									<p class="mb-0"><span class="text-warning">$</span> 40</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/bgn.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Mandalay</p>
+									<p class="mb-0"><span class="text-warning">$</span> 45</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/md.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Mandalay</p>
+									<p class="mb-0"><span class="text-warning">$</span> 50</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/ngapali.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Ngapali</p>
+									<p class="mb-0"><span class="text-warning">$</span> 55</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/oopain.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Oopain</p>
+									<p class="mb-0"><span class="text-warning">$</span> 60</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 price-card">
+						<div class="card mx-2">
+							<div class="card-body">
+								<img src="./Project/img/taungyi.jpg" class="card-img" />
+								<div class="ps-2 mt-2">
+									<p class="mb-0 fw-bolder text-uppercase">Yangon to Taungyi</p>
+									<p class="mb-0"><span class="text-warning">$</span> 65</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- partners -->
+		<section class="container-fluid" id="partners">
+			<div class="container min-vh-100">
+				<div class="row">
+					<div class="col-12 mt-4 wow animate__fadeInRight animation-delay-1">
+						<div class="my-5 text-center">
+							<h1 class="fw-bolder text-success">Trusted seller and official distributor</h1>
+							<h1 class="fw-bolder text-success">for hundreds of operators</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row sponsers my-5 wow animate__zoomIn animation-delay-2">
+					<div class="col-12 col-lg-2 col-xl-2 mt-3">
+						<img src="./Project/img/eurostar-mono.svg" alt="" />
+					</div>
+					<div class="col-12 col-lg-2 col-xl-2 mt-3">
+						<img src="./Project/img/gwr-mono.svg" class="ps-4" />
+					</div>
+
+					<div class="col-12 col-lg-2 col-xl-2 mt-3">
+						<img src="./Project/img/heathrowexpress-mono.svg" alt="" />
+					</div>
+
+					<div class="col-12 col-lg-2 col-xl-2 mt-3">
+						<img src="./Project/img/italo-mono.svg" alt="" />
+					</div>
+
+					<div class="col-12 col-lg-2 col-xl-2 mt-3">
+						<img src="./Project/img/trenitalia-mono.svg" alt="" />
+					</div>
+					<div class="col-12 col-lg-2 col-xl-2 mt-3">
+						<img src="./Project/img/lner-mono.svg" alt="" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-xl-3 partner-card">
+						<div class="card my-5 p-3 custome-shadow wow animate__fadeInLeft animation-delay-3">
+							<div class="card-body">
+								<i class="fa-solid fa-circle-check custome-icon"></i>
+								<h4 class="fw-bolder text-uppercase text-success">Compare</h4>
+								<span class="">Compare cheap prices for train and ticket</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 partner-card">
+						<div class="card my-5 p-3 custome-shadow wow animate__fadeInLeft animation-delay-4">
+							<div class="card-body">
+								<i class="fa-solid fa-train-subway custome-icon"></i>
+								<h4 class="fw-bolder text-uppercase text-success">Travel</h4>
+								<span class="">Travel the whole Burma comfortly</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 partner-card">
+						<div class="card my-5 p-3 custome-shadow wow animate__fadeInLeft animation-delay-5">
+							<div class="card-body">
+								<i class="fa-solid fa-user-group custome-icon"></i>
+								<h4 class="fw-bolder text-uppercase text-success">Join</h4>
+								<span class="">Join millions of people who use us every day</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 partner-card">
+						<div class="card my-5 p-3 custome-shadow wow animate__fadeInLeft animation-delay-6">
+							<div class="card-body">
+								<i class="fa-solid fa-message custome-icon"></i>
+								<h4 class="fw-bolder text-uppercase text-success">Support</h4>
+								<span class="">Customer service on hand every step of the way</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Q&A -->
+		<section class="container-fluid" id="questions">
+			<div class="container min-vh-100">
+				<div class="row p-5">
+					<div class="col-12 col-xl-6 wow animate__fadeInLeft">
+						<div class="mt-5 p-2">
+							<h1 class="text-white">We're here to help</h1>
+							<p>
+								Find clear <span class="text-secondary">FAQs</span> online and customer service available
+								at the end of the phone seven days a week
+							</p>
+							<img src="./Project/img/illu_laptop_help.svg" class="small-laptop w-50" />
+							<button class="btn btn-secondary rounded-pill px-4 w-50 mt-4 call-btn">
+								Call Center
+							</button>
+						</div>
+					</div>
+					<div class="col-12 col-xl-6">
+						<div class="mt-5 p-2">
+							<div class="accordion accordion-flush" id="accordionFlushExample">
+								<div class="accordion-item wow animate__fadeIn animation-delay-1 mb-3">
+									<h2 class="accordion-header" id="flush-headingOne">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseOne"
+											aria-expanded="false"
+											aria-controls="flush-collapseOne"
+										>
+											Do I need to confirm in advance if travelling on a different train?
+										</button>
+									</h2>
+									<div
+										id="flush-collapseOne"
+										class="accordion-collapse collapse"
+										aria-labelledby="flush-headingOne"
+										data-bs-parent="#accordionFlushExample"
+									>
+										<div class="accordion-body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item wow animate__fadeIn animation-delay-2 mb-3">
+									<h2 class="accordion-header" id="flush-headingTwo">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseTwo"
+											aria-expanded="false"
+											aria-controls="flush-collapseTwo"
+										>
+											How much luggage can I take on the train?
+										</button>
+									</h2>
+									<div
+										id="flush-collapseTwo"
+										class="accordion-collapse collapse"
+										aria-labelledby="flush-headingTwo"
+										data-bs-parent="#accordionFlushExample"
+									>
+										<div class="accordion-body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item wow animate__fadeIn animation-delay-3 mb-3">
+									<h2 class="accordion-header" id="flush-headingThree">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseThree"
+											aria-expanded="false"
+											aria-controls="flush-collapseThree"
+										>
+											How will I receive my tickets?
+										</button>
+									</h2>
+									<div
+										id="flush-collapseThree"
+										class="accordion-collapse collapse"
+										aria-labelledby="flush-headingThree"
+										data-bs-parent="#accordionFlushExample"
+									>
+										<div class="accordion-body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item wow animate__fadeIn animation-delay-4 mb-3">
+									<h2 class="accordion-header" id="flush-headingThree">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseFour"
+											aria-expanded="false"
+											aria-controls="flush-collapseThree"
+										>
+											What do the different seat options mean?
+										</button>
+									</h2>
+									<div
+										id="flush-collapseFour"
+										class="accordion-collapse collapse"
+										aria-labelledby="flush-headingThree"
+										data-bs-parent="#accordionFlushExample"
+									>
+										<div class="accordion-body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-xl-6 wow animate__fadeIn animation-delay-5">
+						<div class="p-5">
+							<h1 class="text-white">Burma’s leading train and bus app</h1>
+							<p>
+								Keep your trip on track with departure times, platform info, and tickets in the palm of
+								your hand.
+							</p>
+							<div class="d-flex align-items-center app-card">
+								<div class="card me-3 app">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div class="me-2"><i class="fa-brands fa-apple"></i></div>
+											<div>
+												<p class="mb-0">Download on the</p>
+												<p class="mb-0 fw-bolder">Apple Store</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card app">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div class="me-2"><i class="fa-brands fa-google-play"></i></div>
+											<div>
+												<p class="mb-0">Get it on</p>
+												<p class="mb-0 fw-bolder">Google Play</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-6 wow animate__fadeIn animation-delay-6">
+						<div>
+							<img src="./Project/img/mobile3.svg" class="mobile" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- routes -->
+		<section class="container-fluid" id="routes">
+			<div class="container min-vh-100">
+				<div class="row">
+					<div class="col-12 wow animate__zoomIn">
+						<div class="d-flex justify-content-center mt-5">
+							<div class="my-5">
+								<h1 class="text-center text-capitalize fw-bolder text-success mb-5">
+									Popular train journeys
+								</h1>
+								<p class="text-center text-success">
+									From local trips to cross-country adventures, find info and book train <br />
+									tickets for popular journeys in the Burma.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-12 col-xl-3 wow animate__zoomIn animation-delay-1">
+						<div class="fw-bold text-success">
+							<table>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Mandalay</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Taunggyi</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Pyinmanar</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Mawlamyaing</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Thanlyin</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 wow animate__zoomIn animation-delay-2">
+						<div class="fw-bold text-success">
+							<table>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Bagan</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Magway</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Kalaw</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Myitkyina</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Dawei</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 wow animate__zoomIn animation-delay-3">
+						<div class="fw-bold text-success">
+							<table>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Myeik</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Loikaw</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Haka</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Ngapali</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Pyinoolwin</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 wow animate__zoomIn animation-delay-4">
+						<div class="fw-bold text-success mb-5">
+							<table>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Sagaing</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Hinthada</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Sittwe</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Bago</td>
+								</tr>
+								<tr>
+									<td><i class="fa-solid fa-train-subway text-primary me-1"></i> Yangon to Putao</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- sign up -->
+		<section class="container-fluid" id="signup">
+			<div class="container min-vh-100">
+				<div class="row">
+					<div class="col-12 wow animate__zoomIn">
+						<div class="text-center mt-5">
+							<h4>Ride with us</h4>
+							<h1 class="text-success fw-bolder">Contact Us</h1>
+						</div>
+					</div>
+					<!-- sign up form -->
+					<div class="col-12 col-xl-6 p-4 wow animate__slideInLeft">
+						<div class="mt-5">
+							<div class="card">
+								<div class="card-body">
+									<div class="row g-3">
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="text"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">First Name</label>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="text"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">Last Name</label>
+											</div>
+										</div>
+									</div>
+									<div class="row g-3">
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="email"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">Email</label>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="password"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">Password</label>
+											</div>
+										</div>
+									</div>
+									<div class="row g-3">
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="text"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">Phone</label>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="date"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">Date of Birth</label>
+											</div>
+										</div>
+									</div>
+									<div class="row g-3">
+										<div class="col-md">
+											<div class="form-floating mb-3">
+												<input
+													type="email"
+													class="form-control"
+													id="floatingInput"
+													placeholder="name@example.com"
+												/>
+												<label for="floatingInput">Address</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-check mb-3">
+											<input class="form-check-input" type="checkbox" id="gridCheck" />
+											<label class="form-check-label" for="gridCheck"> Terms & Conditions </label>
+										</div>
+									</div>
+									<div class="col-12">
+										<button type="submit" class="btn btn-secondary rounded-pill px-4 mb-3">Sign up</button>
+									</div>
+									<div class="col-12">
+										<p class="mb-0">
+											Already have account? <span class="text-secondary sign-text">Sign in here</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-xl-6 mt-5 p-4">
+						<iframe
+							class="wow animate__slideInRight"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9083.507441153753!2d96.19490006650294!3d16.81918991725946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed2b31936873%3A0x59b49debd26ca0bf!2z4YCF4YCv4YCV4YCx4YCr4YCE4YC64YC4!5e0!3m2!1sen!2ssg!4v1643447229694!5m2!1sen!2ssg"
+							width="100%"
+							height="302"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+						></iframe>
+					</div>
+				</div>
+				<div class="row my-5">
+					<div class="col-12 col-xl-4 wow animate__zoomIn animation-delay-1">
+						<div class="p-3 text-success">
+							<h4 class="brand-txt"><i class="fa-solid fa-train-subway me-2"></i>Rangoon Greenline</h4>
+							<p>Greenline.com Limited is registered in Myanmar. Company No. 1234.</p>
+							<p>Registered address:5th floor, 292 Yangon, Myanmar. VAT number: 123 456.</p>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 wow animate__zoomIn animation-delay-2">
+						<div class="p-3 text-success">
+							<h4 class="social"><i class="fa-brands fa-facebook me-3"></i> Facebook</h4>
+							<h4 class="social"><i class="fa-brands fa-twitter me-3"></i> Twitter</h4>
+							<h4 class="social"><i class="fa-brands fa-telegram me-3"></i> Telegram</h4>
+							<h4 class="social"><i class="fa-brands fa-instagram me-3"></i> Instagram</h4>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 wow animate__zoomIn animation-delay-3">
+						<div class="p-3 text-success">
+							<p>
+								Copyright © 2021 Greenline.com Limited and its affiliated companies. All rights reserved.
+							</p>
+							<p>Terms & Condition | Privacy Policy</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./Project/vendor/slick-1.8.1/slick/slick.min.js"></script>
+		<script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+		<script src="./node_modules/wow.js/dist/wow.min.js"></script>
+
+		<script src="./Project/js/app.js"></script>
+	</body>
+</html>
