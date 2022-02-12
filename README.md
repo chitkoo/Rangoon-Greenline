@@ -2,6 +2,7 @@
 # Project Title
 
 Rangoon Greenline
+http://ckko.mms-student.online/
 
 - train bookin project by using bootstrap 5
 - if you are having a problem with image not showing up, please use code editor and run it with live server
@@ -25,7 +26,6 @@ Rangoon Greenline
 
 [This project is written by using Bootstrap5.](https://linktodocumentation)
 
-[http://ckko.mms-student.online/](https://linktodocumentation)
 
 
 ## Feedback
